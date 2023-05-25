@@ -17,6 +17,13 @@ You must activate the python development environment before starting
 virtualenv env
 ```
 
+________________________________________________________
+
+Environment variables are used, namely:
+* server_host,
+* server_port,
+* reload
+for API
 
 ## Installing requirements
 
