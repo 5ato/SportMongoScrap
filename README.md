@@ -19,11 +19,18 @@ virtualenv env
 
 ________________________________________________________
 
-Environment variables are used, namely:
-* server_host,
-* server_port,
-* reload
-for API
+## Environment variables for the API, namely:
+* api_server_host,
+* api_server_port,
+* api_reload
+
+_______________________________________________________
+
+## Environment variables for the MongoDB, namely:
+* mongo_uri
+* mongo_database
+* mongo_collection
+
 
 ## Installing requirements
 
