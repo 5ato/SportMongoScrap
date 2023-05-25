@@ -11,11 +11,17 @@ class ApiSettings(EnvBaseSettings):
     server_port: int = 8000
     reload: bool = True
 
+    class Config:
+        env_prefix = 'api_'
+
 
 class DatabaseSettings(EnvBaseSettings):
-    uri: str = f"mongodb+srv://Tormato:Voin5aturna@amazoncluster.1pngkd7.mongodb.net/?retryWrites=true&w=majority"
+    uri: str = "mongodb://127.0.0.1:27017"
     database: str = 'SportPitDB'
     collection: str = 'SportPitColl'
+
+    class Config:
+        env_prefix = 'mongo_'
 
 
 api_settings = ApiSettings()
